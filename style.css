@@ -18,23 +18,25 @@ header {
     padding: 20px 8%;
 }
 
-.logo { font-size: 24px; font-weight: bold; }
+.logo { font-size: 40px; font-weight: bold; }
 .logo span { color: #d63384; }
 
 nav a {
     color: #ccc;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .subscribe-nav {
+    
     background: linear-gradient(90deg, #ffcc33, #d63384);
     border: none;
     padding: 10px 20px;
     border-radius: 25px;
     color: white;
     cursor: pointer;
+    font-size: 13px;
 }
 
 /* হিরো সেকশন ব্যাকগ্রাউন্ড */
@@ -479,7 +481,7 @@ nav a {
 }
 
 .footer-logo {
-    font-size: 32px;
+    font-size: 60px;
     font-weight: bold;
     margin-bottom: 30px;
     letter-spacing: 1px;
