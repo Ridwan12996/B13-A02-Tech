@@ -125,3 +125,74 @@ nav a {
     50% { transform: scale(1.05); opacity: 0.9; }
     100% { transform: scale(1); opacity: 1; }
 }
+
+/* section2 */
+/* About Section Styles */
+.about-section {
+    background-color: #0d0628; /* ব্যাকগ্রাউন্ড কালার */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-desc {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.join-text {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 40px 0;
+}
+
+/* Stats Grid using Flexbox */
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.stat-item h3 {
+    font-size: 40px;
+    color: #00FF88;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 12px;
+    color: #888;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* মোবাইলের জন্য রেসপনসিভ */
+@media (max-width: 768px) {
+    .stats-grid {
+        flex-direction: column;
+    }
+    .stat-item {
+        margin-bottom: 20px;
+    }
+}
