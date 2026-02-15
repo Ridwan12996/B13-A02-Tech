@@ -196,3 +196,90 @@ nav a {
         margin-bottom: 20px;
     }
 }
+              /* Section3 */
+              /* Features Section Styles */
+.features-section {
+    background-color: #0d0628;
+    color: white;
+    padding: 100px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+/* Grid Layout for Cards */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Base Card Style */
+.feature-card {
+    background-color: #1a0f3c; /* গাঢ় বেগুনি ব্যাকগ্রাউন্ড */
+    padding: 30px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.feature-card p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Special Layouts */
+.large-card {
+    grid-row: span 2;
+}
+
+.middle-column {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.horizontal-card {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.small-icon {
+    font-size: 24px;
+    background: linear-gradient(135deg, #ff00cc, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 900px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .large-card {
+        grid-row: auto;
+    }
+}
