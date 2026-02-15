@@ -306,7 +306,7 @@ nav a {
     background-color: #1a0f3c;
     border-radius: 20px;
     overflow: hidden;
-    text-decoration: none; /* লিঙ্ক এর নিচের দাগ সরানোর জন্য */
+    text-decoration: none; 
     color: inherit;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: block;
@@ -369,7 +369,7 @@ nav a {
     color: #aaa;
     margin-bottom: 15px;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* ৩ লাইনের বেশি হলে ডট দেখাবে */
+    -webkit-line-clamp: 3; 
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -378,4 +378,83 @@ nav a {
     font-size: 12px;
     color: #00ffcc; /* নিয়ন গ্রিন কালার */
     font-weight: bold;
+}
+              /* section5 */
+              /* Host Section Styling */
+.host-section {
+    background-color: #0d0628;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* হোস্ট কার্ডের মূল ডিজাইন */
+.host-card {
+    background-color: #1a0f3c; /* গাঢ় বেগুনি কার্ড */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* গোল ছবি সেটিংস */
+.host-image-container {
+    flex-shrink: 0;
+}
+
+.host-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid transparent;
+    background-image: linear-gradient(#1a0f3c, #1a0f3c), 
+                      linear-gradient(135deg, #ff00cc, #ffcc00);
+    background-origin: border-box;
+    background-clip: content-box, border-box; /* ছবির চারপাশে রঙিন বর্ডার */
+}
+
+/* টেক্সট এবং সোশ্যাল আইকন */
+.host-info h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.host-info p {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 20px; /* আইকন সাইজ */
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* মোবাইলের জন্য রেসপনসিভ */
+@media (max-width: 768px) {
+    .host-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+    .social-icons {
+        justify-content: center;
+    }
 }
