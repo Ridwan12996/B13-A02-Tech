@@ -390,7 +390,7 @@ nav a {
 
 /* হোস্ট কার্ডের মূল ডিজাইন */
 .host-card {
-    background-color: #1a0f3c; /* গাঢ় বেগুনি কার্ড */
+    background-color: #1a0f3c;  
     max-width: 900px;
     margin: 0 auto;
     padding: 40px;
@@ -416,10 +416,10 @@ nav a {
     background-image: linear-gradient(#1a0f3c, #1a0f3c), 
                       linear-gradient(135deg, #ff00cc, #ffcc00);
     background-origin: border-box;
-    background-clip: content-box, border-box; /* ছবির চারপাশে রঙিন বর্ডার */
+    background-clip: content-box, border-box; 
 }
 
-/* টেক্সট এবং সোশ্যাল আইকন */
+
 .host-info h3 {
     font-size: 28px;
     margin-bottom: 15px;
@@ -456,5 +456,78 @@ nav a {
     }
     .social-icons {
         justify-content: center;
+    }
+}
+          /* Footer */
+          /* Footer Styling */
+.main-footer {
+    background-color: #0d0628;
+    background-image: url('assets/footer-bg.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+}
+
+
+.footer-bg-overlay {
+    background: rgba(13, 6, 40, 0.85); 
+    padding: 40px 0;
+}
+
+.footer-logo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.footer-logo span {
+    background: linear-gradient(90deg, #ff00cc, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.platform-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.platform-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.platform-item:hover {
+    color: white;
+}
+
+.platform-item img {
+    width: 20px; 
+}
+
+.copyright {
+    color: #666;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* মোবাইলের জন্য রেসপনসিভ */
+@media (max-width: 600px) {
+    .platform-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
     }
 }
