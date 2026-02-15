@@ -249,7 +249,7 @@ nav a {
     line-height: 1.5;
 }
 
-/* Special Layouts */
+
 .large-card {
     grid-row: span 2;
 }
@@ -376,7 +376,7 @@ nav a {
 
 .duration {
     font-size: 12px;
-    color: #00ffcc; /* নিয়ন গ্রিন কালার */
+    color: #00ffcc; 
     font-weight: bold;
 }
               /* section5 */
@@ -388,7 +388,7 @@ nav a {
     text-align: center;
 }
 
-/* হোস্ট কার্ডের মূল ডিজাইন */
+
 .host-card {
     background-color: #1a0f3c;  
     max-width: 900px;
@@ -402,7 +402,7 @@ nav a {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* গোল ছবি সেটিংস */
+
 .host-image-container {
     flex-shrink: 0;
 }
